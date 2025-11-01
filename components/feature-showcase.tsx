@@ -26,7 +26,7 @@ export default function FeatureShowcase() {
       {/* Solution 1 - Quiz Platform (LIVE) */}
       <section className="py-16 sm:py-20 md:px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+          <div className="grid sm:grid-cols-2 gap-8 sm:gap-12 items-center">
             {/* Phone Mockup */}
             <div className="flex justify-center px-1 sm:px-0">
               <Card className="relative w-full sm:max-w-md h-[450px] sm:h-[500px] bg-black rounded-[2.5rem] sm:rounded-[3rem] p-6 sm:p-8 overflow-hidden border-6 sm:border-8 border-gray-800 shadow-2xl">
@@ -162,137 +162,12 @@ export default function FeatureShowcase() {
       </section>
 
       {/* Solution 2 - Real-Time Notifications */}
-      <section className="py-16 sm:py-20 mmd:px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-            {/* Content */}
-            <div className="text-center lg:text-left px-4 sm:px-6 lg:px-8">
-              <div className="inline-block mb-4">
-                <span className="bg-black text-white text-xs font-bold px-3 py-1 rounded-full">
-                  SOON
-                </span>
-              </div>
-              <div className="text-sm font-semibold text-gray-500 mb-2">
-                Smart Notifications
-              </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-black">
-                Real-Time Notifications
-              </h2>
-              <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8">
-                Stay updated with instant notifications for quiz completions,
-                score updates, and achievement milestones. Get immediate
-                feedback and track your learning progress in real-time.
-              </p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-3 text-gray-700">
-                  <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-white text-xs">✓</span>
-                  </div>
-                  <span>Instant Score Updates</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-white text-xs">✓</span>
-                  </div>
-                  <span>Achievement Milestones</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-white text-xs">✓</span>
-                  </div>
-                  <span>Progress Tracking Alerts</span>
-                </li>
-              </ul>
-              <Button
-                variant="outline"
-                className="border-2 border-black text-black hover:bg-black hover:text-white px-6 py-6 rounded-full font-semibold"
-              >
-                Coming Soon
-              </Button>
-            </div>
-
-            {/* Phone Mockup */}
-            <div className="flex justify-center px-1 sm:px-0">
-              <Card className="relative w-full sm:max-w-md h-[450px] sm:h-[500px] bg-black rounded-[2.5rem] sm:rounded-[3rem] p-6 sm:p-8 overflow-hidden border-6 sm:border-8 border-gray-800 shadow-2xl">
-                {/* Background pattern - curved lines */}
-                <div className="absolute inset-0 opacity-10">
-                  <svg
-                    className="w-full h-full"
-                    viewBox="0 0 400 600"
-                    preserveAspectRatio="none"
-                  >
-                    <path
-                      d="M 0 100 Q 200 50 400 100 T 800 100"
-                      stroke="white"
-                      strokeWidth="2"
-                      fill="none"
-                    />
-                    <path
-                      d="M 0 250 Q 200 200 400 250 Q 600 300 800 250"
-                      stroke="white"
-                      strokeWidth="1.5"
-                      fill="none"
-                    />
-                    <circle
-                      cx="350"
-                      cy="450"
-                      r="80"
-                      stroke="white"
-                      strokeWidth="1"
-                      fill="none"
-                    />
-                    <circle
-                      cx="50"
-                      cy="150"
-                      r="60"
-                      stroke="white"
-                      strokeWidth="1"
-                      fill="none"
-                    />
-                  </svg>
-                </div>
-
-                {/* Notification cards */}
-                <div className="relative z-10 space-y-4 mt-16">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10 flex items-center gap-3">
-                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0">
-                      <span className="text-2xl">💬</span>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="font-semibold text-white text-sm">
-                        Quiz Completed
-                      </div>
-                      <div className="text-xs text-gray-300 truncate">
-                        Chemistry Chapter 5 - Score: 95%
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10 flex items-center gap-3">
-                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0">
-                      <span className="text-2xl font-bold text-black">β</span>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="font-semibold text-white text-sm">
-                        BetaForge
-                      </div>
-                      <div className="text-xs text-gray-300 truncate">
-                        Your Quiz Progress Has Been Recorded
-                      </div>
-                    </div>
-                    <div className="text-xs text-gray-400">1 min ago</div>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Solution 3 - Developer Tools */}
       <section className="py-16 sm:py-20 md:px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+          <div className="grid sm:grid-cols-2 gap-8 sm:gap-12 items-center">
             {/* Phone Mockup */}
             <div className="flex justify-center px-1 sm:px-0">
               <Card className="relative w-full sm:max-w-md h-[450px] sm:h-[500px] bg-black rounded-[2.5rem] sm:rounded-[3rem] p-6 sm:p-8 overflow-hidden border-6 sm:border-8 border-gray-800 shadow-2xl">

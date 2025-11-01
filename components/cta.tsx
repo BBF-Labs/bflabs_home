@@ -61,23 +61,23 @@ export default function CTA() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left - Content */}
-          <div>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 leading-tight">
+          <div className="px-2 sm:px-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 leading-tight">
               Ready to Transform Your Business?
             </h2>
-            <p className="text-base sm:text-lg text-gray-400 mb-8 sm:mb-10 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-6 sm:mb-8 md:mb-10 leading-relaxed">
               Let's work together to bring your vision to life. Contact us today
               for a free consultation and discover how we can help your business
               grow.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="w-full sm:w-auto bg-white text-black hover:bg-gray-100 px-8 py-6 text-base sm:text-lg rounded-full font-semibold group">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <Button className="w-full sm:w-auto bg-white text-black hover:bg-gray-100 px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base md:text-lg rounded-full font-semibold group">
                 Start Your Project
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
                 variant="outline"
-                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-black px-8 py-6 text-base sm:text-lg rounded-full"
+                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-black px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base md:text-lg rounded-full"
               >
                 Schedule a Call
               </Button>
@@ -85,8 +85,8 @@ export default function CTA() {
           </div>
 
           {/* Right - Contact Links */}
-          <div className="space-y-4">
-            <div className="text-xl sm:text-2xl font-bold mb-6">
+          <div className="space-y-4 px-2 sm:px-4">
+            <div className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6">
               Get In Touch
             </div>
 
