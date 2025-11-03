@@ -2,6 +2,9 @@ import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import Features from "@/components/features";
 import FeatureShowcase from "@/components/feature-showcase";
+import AIFeatures from "@/components/ai-features";
+import DeveloperAPI from "@/components/developer-api";
+import Services from "@/components/services";
 import TechStack from "@/components/tech-stack";
 import Team from "@/components/team";
 import Contact from "@/components/contact";
@@ -14,10 +17,13 @@ export default function Home() {
       <Navbar />
       <Hero />
       {/* <Features /> */}
-      <FeatureShowcase />
+      {/* <FeatureShowcase /> */}
+      <AIFeatures />
+      <DeveloperAPI />
+      <Services />
       <TechStack />
       <Team />
-      {/* <Contact /> */}
+      <Contact />
       <CTA />
       <Footer />
     </main>

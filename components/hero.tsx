@@ -151,7 +151,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen rounded-br-4xl flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
+    <section className="relative w-full min-h-screen  flex items-center justify-center bg-gradient-to-br from-gray-900 via-[#1a1a1a] to-gray-900 text-white overflow-hidden">
       {/* Neural Network Canvas */}
       <canvas
         ref={canvasRef}
@@ -161,7 +161,7 @@ export default function Hero() {
 
       {/* Main content */}
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto py-20 w-full">
-        <div className="mb-6 inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 sm:px-4 py-2 max-w-full">
+        <div className="mb-6 mt-4 inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 sm:px-4 py-2 max-w-full">
           <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse shrink-0" />
           <span className="text-xs sm:text-sm truncate">
             Join 50,000+ students already learning smarter
@@ -169,25 +169,26 @@ export default function Hero() {
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight px-2">
-          Transform Ideas Into
-          <span className="block text-white mt-2">Digital Success</span>
+          Master Your Exams with
+          <span className="block text-white mt-2">AI-Powered Quizzes</span>
         </h1>
 
         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed px-4">
-          We're your partner in product design, website creation, and branding
-          for every stage of your business.
+          Experience up to 95% improvement in exam performance with
+          lecture-specific quizzes, AI-generated questions, and smart flashcards
+          tailored to your courses.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16 px-4 w-full max-w-md sm:max-w-none mx-auto">
           <Button className="w-full sm:w-auto bg-white text-black hover:bg-gray-100 px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base md:text-lg rounded-full font-semibold group">
-            Get Started
+            Start Learning Free
             <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
           <Button
             variant="outline"
             className="w-full sm:w-auto border-2 border-white/30 text-white hover:bg-white/10 px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base md:text-lg rounded-full bg-transparent backdrop-blur-sm group"
           >
-            Contact
+            Explore API
           </Button>
         </div>
       </div>

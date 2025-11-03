@@ -3,7 +3,7 @@ import { ArrowRight, Mail } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section className="py-16 sm:py-20 md:py-24 px-4 bg-black text-white relative overflow-hidden">
+    <section className="py-16 sm:py-20 md:py-24 px-4 bg-[#393939] text-white relative overflow-hidden">
       {/* Background patterns - white wavy lines left */}
       <div className="absolute left-0 top-0 w-64 sm:w-96 h-full opacity-10">
         <svg className="w-full h-full" viewBox="0 0 400 800">
@@ -63,23 +63,23 @@ export default function CTA() {
           {/* Left - Content */}
           <div className="px-2 sm:px-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 leading-tight">
-              Ready to Transform Your Business?
+              Ready to Ace Your Next Exam?
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-6 sm:mb-8 md:mb-10 leading-relaxed">
-              Let's work together to bring your vision to life. Contact us today
-              for a free consultation and discover how we can help your business
-              grow.
+              Join thousands of students improving their grades with AI-powered
+              quizzes. Start learning smarter today or integrate our API into
+              your platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button className="w-full sm:w-auto bg-white text-black hover:bg-gray-100 px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base md:text-lg rounded-full font-semibold group">
-                Start Your Project
+                Start Learning Free
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
                 variant="outline"
                 className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-black px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base md:text-lg rounded-full"
               >
-                Schedule a Call
+                Get API Access
               </Button>
             </div>
           </div>
@@ -158,9 +158,9 @@ export default function CTA() {
                 Why Choose BetaForge?
               </h3>
               <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-                We're a team of passionate developers and designers dedicated to
-                building innovative digital solutions. From web apps to
-                AI-powered platforms, we turn your ideas into reality.
+                The most advanced quiz platform powered by AI. Trusted by
+                50,000+ students and 500+ universities worldwide. Built by
+                developers, for learners and developers.
               </p>
             </div>
           </div>

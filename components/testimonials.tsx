@@ -58,7 +58,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-24 px-4 bg-black text-white relative overflow-hidden"
+      className="py-24 px-4 bg-[#1a1a1a] text-white relative overflow-hidden"
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">

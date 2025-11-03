@@ -6,17 +6,63 @@ export default function FeatureShowcase() {
   return (
     <>
       {/* Solutions Header */}
-      <section className="py-16 sm:py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto text-center">
+      {/* Solution 1 - Personalized Quizzes */}
+      <section className="py-16 sm:py-20 px-4 bg-[#393939] relative overflow-hidden">
+        {/* Background patterns - dots left */}
+        <div className="absolute left-0 top-0 w-64 sm:w-96 h-full opacity-5">
+          <svg className="w-full h-full" viewBox="0 0 400 800">
+            <pattern
+              id="featureDots1"
+              x="0"
+              y="0"
+              width="40"
+              height="40"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle cx="20" cy="20" r="3" fill="white" />
+            </pattern>
+            <rect
+              x="0"
+              y="0"
+              width="400"
+              height="800"
+              fill="url(#featureDots1)"
+            />
+          </svg>
+        </div>
+
+        {/* Background patterns - grid right */}
+        <div className="absolute right-0 top-0 w-64 sm:w-96 h-full opacity-5">
+          <svg className="w-full h-full" viewBox="0 0 400 800">
+            <defs>
+              <pattern
+                id="grid1"
+                width="50"
+                height="50"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 50 0 L 0 0 0 50"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="1"
+                />
+              </pattern>
+            </defs>
+            <rect width="400" height="800" fill="url(#grid1)" />
+          </svg>
+        </div>
+
+        <div className="max-w-7xl mx-auto text-center relative z-10">
           <div className="inline-block mb-4">
-            <span className="bg-black text-white text-sm font-semibold px-4 py-2 rounded-full">
+            <span className="bg-white text-black text-sm font-semibold px-4 py-2 rounded-full">
               OUR PLATFORM
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white px-4">
             Make Your Learning Exceptional
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4">
+          <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto px-4">
             Master your courses with lecture-specific quizzes and comprehensive
             assessments. Experience up to 95% improvement in exam performance.
           </p>
@@ -24,12 +70,48 @@ export default function FeatureShowcase() {
       </section>
 
       {/* Solution 1 - Quiz Platform (LIVE) */}
-      <section className="py-16 sm:py-20 md:px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-16 sm:py-20 md:px-4 bg-[#393939] relative overflow-hidden">
+        {/* Background patterns - zigzag left */}
+        <div className="absolute left-0 top-0 w-64 sm:w-96 h-full opacity-5">
+          <svg className="w-full h-full" viewBox="0 0 400 800">
+            <path
+              d="M 0 0 L 50 50 L 0 100 L 50 150 L 0 200 L 50 250 L 0 300 L 50 350 L 0 400"
+              stroke="white"
+              strokeWidth="2"
+              fill="none"
+            />
+            <path
+              d="M 50 0 L 100 50 L 50 100 L 100 150 L 50 200 L 100 250 L 50 300 L 100 350 L 50 400"
+              stroke="white"
+              strokeWidth="1.5"
+              fill="none"
+            />
+          </svg>
+        </div>
+
+        {/* Background patterns - waves right */}
+        <div className="absolute right-0 top-0 w-64 sm:w-96 h-full opacity-5">
+          <svg className="w-full h-full" viewBox="0 0 400 800">
+            <path
+              d="M 400 0 Q 300 50 400 100 T 400 200 T 400 300 T 400 400"
+              stroke="white"
+              strokeWidth="2"
+              fill="none"
+            />
+            <path
+              d="M 350 0 Q 250 50 350 100 T 350 200 T 350 300 T 350 400"
+              stroke="white"
+              strokeWidth="1.5"
+              fill="none"
+            />
+          </svg>
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid sm:grid-cols-2 gap-8 sm:gap-12 items-center">
             {/* Phone Mockup */}
             <div className="flex justify-center px-1 sm:px-0">
-              <Card className="relative w-full sm:max-w-md h-[450px] sm:h-[500px] bg-black rounded-[2.5rem] sm:rounded-[3rem] p-6 sm:p-8 overflow-hidden border-6 sm:border-8 border-gray-800 shadow-2xl">
+              <Card className="relative w-full sm:max-w-md h-[450px] sm:h-[500px] bg-[#1a1a1a] rounded-[2.5rem] sm:rounded-[3rem] p-6 sm:p-8 overflow-hidden border-6 sm:border-8 border-gray-800 shadow-2xl">
                 {/* Background pattern - curved lines */}
                 <div className="absolute inset-0 opacity-10">
                   <svg
@@ -122,38 +204,38 @@ export default function FeatureShowcase() {
                   LIVE
                 </span>
               </div>
-              <div className="text-sm font-semibold text-gray-500 mb-2">
+              <div className="text-sm font-semibold text-gray-300 mb-2">
                 Interactive Learning
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-black">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white">
                 Quiz Platform
               </h2>
-              <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8">
+              <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-6 sm:mb-8">
                 Practice with lecture-specific quizzes tailored to your exact
                 course content. Access comprehensive assessments with custom
                 timers and instant feedback.
               </p>
               <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-3 text-gray-700">
-                  <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white text-xs">✓</span>
+                <li className="flex items-center gap-3 text-gray-200">
+                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shrink-0">
+                    <span className="text-black text-xs">✓</span>
                   </div>
                   <span>Lecture-Specific Quizzes</span>
                 </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white text-xs">✓</span>
+                <li className="flex items-center gap-3 text-gray-200">
+                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shrink-0">
+                    <span className="text-black text-xs">✓</span>
                   </div>
                   <span>Progress Tracking & Analytics</span>
                 </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white text-xs">✓</span>
+                <li className="flex items-center gap-3 text-gray-200">
+                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shrink-0">
+                    <span className="text-black text-xs">✓</span>
                   </div>
                   <span>Offline Access & Custom Timers</span>
                 </li>
               </ul>
-              <Button className="bg-black text-white hover:bg-gray-800 px-6 py-6 rounded-full font-semibold">
+              <Button className="bg-white text-black hover:bg-gray-100 px-6 py-6 rounded-full font-semibold">
                 Start Learning <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </div>
@@ -162,131 +244,6 @@ export default function FeatureShowcase() {
       </section>
 
       {/* Solution 2 - Real-Time Notifications */}
-     
-
-      {/* Solution 3 - Developer Tools */}
-      <section className="py-16 sm:py-20 md:px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid sm:grid-cols-2 gap-8 sm:gap-12 items-center">
-            {/* Phone Mockup */}
-            <div className="flex justify-center px-1 sm:px-0">
-              <Card className="relative w-full sm:max-w-md h-[450px] sm:h-[500px] bg-black rounded-[2.5rem] sm:rounded-[3rem] p-6 sm:p-8 overflow-hidden border-6 sm:border-8 border-gray-800 shadow-2xl">
-                {/* Background pattern - diagonal lines top right */}
-                <div className="absolute top-0 right-0 w-40 sm:w-48 h-40 sm:h-48 opacity-10">
-                  <svg className="w-full h-full" viewBox="0 0 200 200">
-                    <path
-                      d="M 20 0 L 40 0 M 40 0 L 60 0 M 60 0 L 80 0 M 80 0 L 100 0 M 100 0 L 120 0 M 120 0 L 140 0"
-                      stroke="white"
-                      strokeWidth="8"
-                      transform="rotate(45 100 100)"
-                    />
-                    <path
-                      d="M 0 20 L 0 40 M 0 40 L 0 60 M 0 60 L 0 80 M 0 80 L 0 100 M 0 100 L 0 120"
-                      stroke="white"
-                      strokeWidth="8"
-                      transform="rotate(45 100 100)"
-                    />
-                  </svg>
-                </div>
-
-                {/* API Code Display */}
-                <div className="relative z-10 space-y-4 mt-8">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                    </div>
-                    <div className="font-mono text-xs text-white space-y-1">
-                      <div className="text-gray-400">// Quiz API</div>
-                      <div>
-                        <span className="text-white">POST</span>{" "}
-                        <span className="text-gray-300">/api/quiz/submit</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
-                    <div className="font-mono text-xs text-white space-y-1">
-                      <div className="text-gray-400">// Response</div>
-                      <div>
-                        <span className="text-gray-300">score:</span>{" "}
-                        <span className="text-white">95</span>
-                      </div>
-                      <div>
-                        <span className="text-gray-300">correct:</span>{" "}
-                        <span className="text-white">28/30</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <div className="font-semibold text-white text-sm">
-                          API Documentation
-                        </div>
-                        <div className="text-xs text-gray-400">
-                          Integrate with your app
-                        </div>
-                      </div>
-                      <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                        <span className="text-black text-xs">→</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            </div>
-
-            {/* Content */}
-            <div className="text-center lg:text-left px-4 sm:px-6 lg:px-8">
-              <div className="inline-block mb-4">
-                <span className="bg-black text-white text-xs font-bold px-3 py-1 rounded-full">
-                  SOON
-                </span>
-              </div>
-              <div className="text-sm font-semibold text-gray-500 mb-2">
-                Integration & Development
-              </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-black">
-                Developer Tools & API
-              </h2>
-              <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8">
-                Integrate our quiz platform into your applications with powerful
-                REST APIs. Upload custom questions, manage quiz content, and
-                access detailed analytics programmatically.
-              </p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-3 text-gray-700">
-                  <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-white text-xs">✓</span>
-                  </div>
-                  <span>RESTful API Access</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-white text-xs">✓</span>
-                  </div>
-                  <span>Custom Question Upload</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-white text-xs">✓</span>
-                  </div>
-                  <span>Analytics & Webhooks</span>
-                </li>
-              </ul>
-              <Button
-                variant="outline"
-                className="border-2 border-black text-black hover:bg-black hover:text-white px-6 py-6 rounded-full font-semibold"
-              >
-                Coming Soon
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
