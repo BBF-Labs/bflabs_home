@@ -70,7 +70,7 @@ export default function Services() {
   return (
     <section
       ref={containerRef}
-      className="py-12 sm:py-16 px-4 bg-[#393939] relative overflow-hidden"
+      className="py-12 sm:py-16 px-4 bg-black relative overflow-hidden"
     >
       {/* Background patterns - wavy lines left */}
       <div className="absolute left-0 top-0 w-64 sm:w-96 h-full opacity-10">
