@@ -3,66 +3,18 @@ import { ArrowRight, Mail } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section className="py-16 sm:py-20 md:py-24 px-4 bg-[#393939] text-white relative overflow-hidden">
-      {/* Background patterns - white wavy lines left */}
-      <div className="absolute left-0 top-0 w-64 sm:w-96 h-full opacity-10">
-        <svg className="w-full h-full" viewBox="0 0 400 800">
-          <path
-            d="M 0 0 Q 100 100 0 200 T 0 400 T 0 600 T 0 800"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-          <path
-            d="M 50 0 Q 150 100 50 200 T 50 400 T 50 600 T 50 800"
-            stroke="white"
-            strokeWidth="1.5"
-            fill="none"
-          />
-          <path
-            d="M 100 0 Q 200 100 100 200 T 100 400 T 100 600 T 100 800"
-            stroke="white"
-            strokeWidth="1"
-            fill="none"
-          />
-        </svg>
-      </div>
+    <section className="py-16 sm:py-20 md:py-24 px-4 bg-black text-white relative overflow-hidden">
+      {/* Gradient orbs */}
+      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl" />
+      </div> */}
 
-      {/* Background patterns - white diagonal lines right */}
-      <div className="absolute right-0 top-0 w-64 sm:w-96 h-full opacity-10">
-        <svg className="w-full h-full" viewBox="0 0 400 800">
-          <path
-            d="M 400 0 L 0 400"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-          <path
-            d="M 400 100 L 100 400"
-            stroke="white"
-            strokeWidth="1.5"
-            fill="none"
-          />
-          <path
-            d="M 400 200 L 200 400"
-            stroke="white"
-            strokeWidth="1"
-            fill="none"
-          />
-          <path
-            d="M 400 400 L 0 800"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-        </svg>
-      </div>
-
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left - Content */}
           <div className="px-2 sm:px-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-bold mb-6 sm:mb-8 leading-tight">
               Ready to Ace Your Next Exam?
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-6 sm:mb-8 md:mb-10 leading-relaxed">

@@ -1,11 +1,8 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
-import Features from "@/components/features";
-import FeatureShowcase from "@/components/feature-showcase";
 import AIFeatures from "@/components/ai-features";
+import Partners from "@/components/partners";
 import DeveloperAPI from "@/components/developer-api";
-import Services from "@/components/services";
-import TechStack from "@/components/tech-stack";
 import Team from "@/components/team";
 import Contact from "@/components/contact";
 import CTA from "@/components/cta";
@@ -16,12 +13,9 @@ export default function Home() {
     <main className="min-h-screen w-full overflow-x-hidden">
       <Navbar />
       <Hero />
-      {/* <Features /> */}
-      {/* <FeatureShowcase /> */}
       <AIFeatures />
+      <Partners />
       <DeveloperAPI />
-      <Services />
-      <TechStack />
       <Team />
       <Contact />
       <CTA />

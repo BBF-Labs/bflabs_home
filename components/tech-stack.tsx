@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
   FaReact,
   FaNodeJs,
@@ -84,175 +86,113 @@ const technologies = [
 
 export default function TechStack() {
   return (
-    <section className="py-16 sm:py-20 md:py-24 px-4 bg-[#1a1a1a] relative overflow-hidden">
-      {/* Background patterns - circuit lines left */}
-      <div className="absolute left-0 top-0 w-64 sm:w-96 h-full opacity-10">
-        <svg className="w-full h-full" viewBox="0 0 400 800">
-          <path
-            d="M 50 50 L 100 50 L 100 100 L 150 100"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-          <circle cx="50" cy="50" r="4" fill="white" />
-          <circle cx="100" cy="50" r="4" fill="white" />
-          <circle cx="100" cy="100" r="4" fill="white" />
-          <circle cx="150" cy="100" r="4" fill="white" />
+    <section className="py-32 px-6 bg-[oklch(0.10_0.01_260)] relative overflow-hidden">
+      {/* Stripe-style gradient orbs */}
+      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[oklch(0.55_0.25_280)] rounded-full blur-[150px] opacity-20" />
+      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[oklch(0.65_0.20_200)] rounded-full blur-[150px] opacity-15" />
 
-          <path
-            d="M 50 200 L 80 200 L 80 250 L 120 250"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-          <circle cx="50" cy="200" r="4" fill="white" />
-          <circle cx="120" cy="250" r="4" fill="white" />
-
-          <path
-            d="M 30 350 L 70 350 L 70 400 L 110 400 L 110 450"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-          <circle cx="30" cy="350" r="4" fill="white" />
-          <circle cx="110" cy="450" r="4" fill="white" />
-        </svg>
-      </div>
-
-      {/* Background patterns - tech symbols right */}
-      <div className="absolute right-0 top-0 w-64 sm:w-96 h-full opacity-10">
-        <svg className="w-full h-full" viewBox="0 0 400 800">
-          <path
-            d="M 300 80 L 340 80 L 340 120 L 300 120 Z"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-          <path
-            d="M 350 50 L 380 80 L 350 110"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-
-          <circle
-            cx="320"
-            cy="200"
-            r="30"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-          <path
-            d="M 320 180 L 320 220 M 300 200 L 340 200"
-            stroke="white"
-            strokeWidth="2"
-          />
-
-          <path
-            d="M 310 350 L 330 330 L 350 350 L 330 370 Z"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-          <path
-            d="M 300 450 L 350 450 L 325 500 Z"
-            stroke="white"
-            strokeWidth="2"
-            fill="none"
-          />
-        </svg>
-      </div>
-
-      {/* Subtle grid pattern background */}
-      <div className="absolute inset-0 opacity-5">
+      {/* Subtle grid */}
+      <div className="absolute inset-0 opacity-[0.02]">
         <div
           className="absolute inset-0"
           style={{
             backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
                               linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-            backgroundSize: "50px 50px",
+            backgroundSize: "48px 48px",
           }}
         />
       </div>
 
-      {/* Gradient glow effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-[120px]" />
-
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Section header */}
+        {/* Section header - Stripe style */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16 sm:mb-20"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-            Technologies
+          <div className="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/5 border border-white/10">
+            <span className="text-sm font-medium text-white/70">Our Stack</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+            Built with the best
           </h2>
-          <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto px-4">
-            Leveraging cutting-edge tools to build exceptional digital products
+          <p className="text-xl text-white/60 max-w-2xl mx-auto font-light">
+            Leveraging cutting-edge technologies to deliver exceptional digital
+            experiences
           </p>
         </motion.div>
 
-        {/* Tech icons container with border */}
+        {/* Tech grid - Stripe card style */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative max-w-5xl mx-auto"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto"
         >
-          {/* Glowing border effect */}
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-white/20 via-gray-400/20 to-white/20 rounded-3xl blur opacity-30" />
+          {technologies.map((tech, index) => {
+            const Icon = tech.icon;
+            return (
+              <motion.div
+                key={tech.name}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.4,
+                  delay: index * 0.05,
+                }}
+                viewport={{ once: true }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="group relative"
+              >
+                {/* Card with gradient border on hover */}
+                <div className="absolute -inset-0.5 bg-linear-to-r from-[oklch(0.65_0.25_280)] to-[oklch(0.70_0.18_200)] rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-300" />
 
-          {/* Main container */}
-          <div className="relative bg-[#1a1a1a]/80 backdrop-blur-xl rounded-3xl border border-white/10 p-8 sm:p-12 md:p-16">
-            {/* Tech grid */}
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 gap-8 sm:gap-12 md:gap-16">
-              {technologies.map((tech, index) => {
-                const Icon = tech.icon;
-                return (
-                  <motion.div
-                    key={tech.name}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.5,
-                      delay: index * 0.1,
-                      ease: "easeOut",
-                    }}
-                    viewport={{ once: true }}
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    className="flex flex-col items-center justify-center gap-3 group cursor-pointer"
-                  >
-                    {/* Icon */}
-                    <motion.div
-                      whileHover={{ rotate: [0, -10, 10, -10, 0] }}
-                      transition={{ duration: 0.5 }}
-                      className="relative"
-                    >
-                      {/* Glow effect on hover */}
-                      <div
-                        className="absolute inset-0 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300"
-                        style={{ backgroundColor: tech.color }}
-                      />
-                      <Icon
-                        size={48}
-                        color={tech.color}
-                        className="relative z-10 transition-all duration-300"
-                      />
-                    </motion.div>
+                <div className="relative h-40 bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center gap-4 group-hover:bg-white/[0.06] group-hover:border-white/20 transition-all duration-300">
+                  {/* Icon with glow */}
+                  <div className="relative">
+                    <div
+                      className="absolute inset-0 blur-2xl opacity-0 group-hover:opacity-60 transition-opacity duration-300"
+                      style={{ backgroundColor: tech.color }}
+                    />
+                    <Icon
+                      size={40}
+                      style={{ color: tech.color }}
+                      className="relative z-10 transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
 
-                    {/* Tech name */}
-                    <span className="text-xs sm:text-sm font-medium text-white/60 group-hover:text-white transition-colors duration-300 text-center">
-                      {tech.name}
-                    </span>
-                  </motion.div>
-                );
-              })}
-            </div>
+                  {/* Tech name */}
+                  <span className="text-sm font-medium text-white/50 group-hover:text-white/90 transition-colors duration-300 text-center">
+                    {tech.name}
+                  </span>
+                </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
+
+        {/* Bottom CTA section - Stripe style */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mt-24 text-center"
+        >
+          <div className="max-w-3xl mx-auto bg-linear-to-br from-white/5 to-white/2 backdrop-blur-sm border border-white/10 rounded-3xl p-12">
+            <h3 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Want to build something amazing?
+            </h3>
+            <p className="text-lg text-white/60 mb-8">
+              Let's turn your vision into reality with our proven tech stack
+            </p>
+            <Button className="bg-white text-black hover:bg-white/90 px-8 py-6 text-base font-semibold rounded-xl transition-all hover:scale-105 hover:shadow-2xl hover:shadow-[oklch(0.65_0.25_280)]/20">
+              Start Your Project
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </motion.div>
       </div>
